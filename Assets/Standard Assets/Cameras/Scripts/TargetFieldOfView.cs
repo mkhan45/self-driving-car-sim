@@ -57,21 +57,6 @@ namespace UnityStandardAssets.Cameras
 
             Bounds bounds = new Bounds();
             bool initBounds = false;
-            foreach (Renderer r in renderers)
-            {
-                if (!((r is TrailRenderer) || (r is ParticleRenderer) || (r is ParticleSystemRenderer)))
-                {
-                    if (!initBounds)
-                    {
-                        initBounds = true;
-                        bounds = r.bounds;
-                    }
-                    else
-                    {
-                        bounds.Encapsulate(r.bounds);
-                    }
-                }
-            }
             float max = Mathf.Max(bounds.extents.x, bounds.extents.y, bounds.extents.z);
             return max;
         }
