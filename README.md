@@ -33,6 +33,9 @@ Building will take a few minutes and make your computer quite slow while doing s
 6. Go to your folder with pgebert's repo and run `python model.py`. 
   - You'll probably have to import a few things, preemptively run: `pip install torch torchvision plotly --user`
   - There might be a few other things to import, for each of these run `pip install {{insert package name here}} --user`
+  - You can stop this at any time. Just for testing run it for about 10 minutes.
+
+* I don't have an nvidia GPU but you should be able to speed up training significantly using CUDA if you do; just follow the instructs on the pgebert repo
 
 Running the trained model
 
