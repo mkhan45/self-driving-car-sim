@@ -15,6 +15,14 @@ git lfs checkout
 
 This requires git lfs to be installed. AFAIK, the windows version of git comes with git lfs, but on linux and probably MacOS you need to install it separately. 
 
+## Building for AMP (tested only on Linux but will probably work everywhere)
+
+1. Go to file > build settings 
+2. Uncheck all the scenes except LauncherScene and LakeTrackTraining and LakeTrackAutonomous
+3. Click Build
+
+Building will take a long time and make your computer quite slow while doing so.
+
 ## Welcome to Udacity's Self-Driving Car Simulator 
 
 This simulator was built for [Udacity's Self-Driving Car Nanodegree](https://udacity.com/drive), to teach students how to train cars how to navigate road courses using deep learning. See more [project details here](https://github.com/udacity/CarND-Behavioral-Cloning-P3).
