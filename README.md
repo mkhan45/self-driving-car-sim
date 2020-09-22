@@ -23,16 +23,23 @@ This requires git lfs to be installed. AFAIK, the windows version of git comes w
 
 Building will take a few minutes and make your computer quite slow while doing so.
 
-## Training using pgebert sim
+## Training/Running the pgebert model
 
 1. After building, run the compiled program. 
 2. On the menu, click training mode. 
 3. Click the record button in the top right and choose a folder for the data to be stored in. You should choose the folder in which you cloned the pgebert repo. 
 4. Click the record button again and drive around the track.
 5. Click the stop recording button.
-6. Go to your folderr with pgebert's repo and run `python model.py`. 
+6. Go to your folder with pgebert's repo and run `python model.py`. 
   - You'll probably have to import a few things, preemptively run: `pip install torch torchvision plotly --user`
-  - There might be a few other things to import
+  - There might be a few other things to import, for each of these run `pip install {{insert package name here}} --user`
+
+Running the trained model
+
+1. Restart the program and click autonomous mode
+2. Run drive.py in the pgebert repo
+  - You'll probably have to import stuff
+3. zoom zoom
 
 ## Welcome to Udacity's Self-Driving Car Simulator 
 
