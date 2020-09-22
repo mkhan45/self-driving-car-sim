@@ -18,10 +18,21 @@ This requires git lfs to be installed. AFAIK, the windows version of git comes w
 ## Building for AMP (tested only on Linux but will probably work everywhere)
 
 1. Go to file > build settings 
-2. Uncheck all the scenes except LauncherScene and LakeTrackTraining and LakeTrackAutonomous
+2. Uncheck all the scenes except LauncherScene, LakeTrackTraining, LakeTrackAutonomous, MenuScene, and ControlMenu
 3. Click Build
 
-Building will take a long time and make your computer quite slow while doing so.
+Building will take a few minutes and make your computer quite slow while doing so.
+
+## Training using pgebert sim
+
+1. After building, run the compiled program. 
+2. On the menu, click training mode. 
+3. Click the record button in the top right and choose a folder for the data to be stored in. You should choose the folder in which you cloned the pgebert repo. 
+4. Click the record button again and drive around the track.
+5. Click the stop recording button.
+6. Go to your folderr with pgebert's repo and run `python model.py`. 
+  - You'll probably have to import a few things, preemptively run: `pip install torch torchvision plotly --user`
+  - There might be a few other things to import
 
 ## Welcome to Udacity's Self-Driving Car Simulator 
 
