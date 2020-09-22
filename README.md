@@ -1,3 +1,20 @@
+## Install Instructions for AMP
+
+```
+git clone https://github.com/mkhan45/self-driving-car-sim
+```
+
+Add the project through Unity; make sure you're using editor version 2019.x.x. There should be no compilation errors. If it asks to update the assets I think it works either way but click no to be safe.
+
+If you open the scene and there's a big white cube and no roads and everything just looks terrible, run:
+```
+git lfs fetch
+git lfs install
+git lfs checkout
+```
+
+This requires git lfs to be installed. AFAIK, the windows version of git comes with git lfs, but on linux and probably MacOS you need to install it separately. 
+
 ## Welcome to Udacity's Self-Driving Car Simulator 
 
 This simulator was built for [Udacity's Self-Driving Car Nanodegree](https://udacity.com/drive), to teach students how to train cars how to navigate road courses using deep learning. See more [project details here](https://github.com/udacity/CarND-Behavioral-Cloning-P3).
